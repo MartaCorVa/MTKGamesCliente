@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_gradient"
+    tools:context=".ui.registro.RegistroFragment">
+
+    <ImageView
+        android:id="@+id/login_logo"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-40dp"
+        android:src="@drawable/logo_sin_fondo" />
+
+    <EditText
+        android:id="@+id/registro_nickname"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/login_logo"
+        android:layout_centerHorizontal="true"
+        android:background="#11000000"
+        android:drawableStart="@drawable/ic_person"
+        android:ems="10"
+        android:hint="@string/nick"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/blanco" />
+
+    <EditText
+        android:id="@+id/registro_email"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/registro_nickname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#11000000"
+        android:drawableStart="@drawable/ic_email"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/blanco" />
+
+    <EditText
+        android:id="@+id/registro_password"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/registro_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#11000000"
+        android:drawableStart="@drawable/ic_lock"
+        android:ems="10"
+        android:hint="@string/password"
+        android:textColor="@color/blanco"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/registro_password_confirma"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/registro_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#11000000"
+        android:drawableStart="@drawable/ic_lock"
+        android:ems="10"
+        android:hint="@string/confirma"
+        android:textColor="@color/blanco"
+        android:inputType="textPassword" />
+
+    <androidx.cardview.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/boton_registro"
+        android:layout_width="270dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/registro_password_confirma"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        card_view:cardBackgroundColor="@color/rosa"
+        card_view:cardCornerRadius="25dp"
+        card_view:cardElevation="15dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/registrar"
+                android:textAlignment="center"
+                android:textColor="@color/blanco"
+                android:textSize="23sp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/boton_registro_borrar"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/boton_registro"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        card_view:cardBackgroundColor="@color/rosa"
+        card_view:cardCornerRadius="25dp"
+        card_view:cardElevation="15dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/borrar_datos"
+                android:textAlignment="center"
+                android:textColor="@color/blanco"
+                android:textSize="23sp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

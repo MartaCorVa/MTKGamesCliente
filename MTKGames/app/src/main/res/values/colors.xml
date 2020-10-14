@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="fondo">#BBCFCD</color>
+    <color name="blanco">#FDFCFC</color>
+    <color name="gris">#9E8F8F8F</color>
+    <color name="lila">#D024ED</color>
+    <color name="blanco_alpha">#94FFFFFF</color>
+    <color name="morado">#502EA8</color>
+    <color name="negro">#000000</color>
+    <color name="rosa">#E71D73</color>
+    <color name="rosa_palo">#BAF39DC1</color>
+</resources>

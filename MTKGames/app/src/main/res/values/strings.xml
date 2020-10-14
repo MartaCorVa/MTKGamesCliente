@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">MTKGames</string>
+    <string name="titulo_tienda">Tienda</string>
+    <string name="populares">Más populares</string>
+    <string name="bestsellers">Best Sellers</string>
+    <string name="ver_mas">Ver más</string>
+    <string name="categorias">Categorias</string>
+    <string name="biblioteca">Biblioteca</string>
+    <string name="iniciar_sesion">Iniciar sesión</string>
+    <string name="email">Email</string>
+    <string name="password">Contraseña</string>
+    <string name="login">Login</string>
+    <string name="registro">Registro</string>
+    <string name="registrar">Registrar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="nick">Nickname</string>
+    <string name="confirma">Confirma contraseña</string>
+    <string name="ir_registro">¿No tienes cuenta? Registrate haciendo click aquí.</string>
+    <string name="modificar_perfil">Modificar perfil</string>
+    <string name="modificar">Modificar</string>
+    <string name="monedero">Monedero</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="home_second">Home Second</string>
+
+
+    <string name="defecto">Defecto</string>
+    <string name="borrar">Borrar</string>
+    <string name="title_activity_main_logged">MainLogged</string>
+    <string name="perfil">Perfil</string>
+    <string name="title_activity_aputamerda">Aputamerda</string>
+    <string name="dinero_cinco">4,99€</string>
+    <string name="dinero_diez">9,99€</string>
+    <string name="dinero_veintitres">22,99€</string>
+    <string name="dinero_cuarenta">43,99€</string>
+    <string name="dinero_sesenta">59,99€</string>
+    <string name="saldo_disponible">Saldo disponible:</string>
+    <string name="juego_descripcion">Descripción</string>
+    <string name="nombre">Nombre</string>
+    <string name="cerrar_sesion">Cerrar Sesión</string>
+    <string name="borrar_datos">Borrar Datos</string>
+</resources>

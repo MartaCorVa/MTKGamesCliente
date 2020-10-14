@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/fondo_gradient"
+    tools:context=".ui.tienda.TiendaFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/populares"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="@string/populares"
+                android:fontFamily="monospace"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/blanco"
+                />
+
+            <ImageView
+                android:id="@+id/primer_juego"
+                android:layout_width="242dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginStart="85dp"
+                android:layout_below="@id/populares"
+                android:scaleType="fitXY"
+                android:src="@drawable/angry"
+                />
+
+            <ImageView
+                android:id="@+id/primer_marco"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@id/populares"
+                android:src="@drawable/primer_marco"
+                />
+
+            <ImageView
+                android:id="@+id/segundo_juego"
+                android:layout_width="180dp"
+                android:layout_height="120dp"
+                android:layout_below="@id/primer_marco"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="14dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/angry"
+                />
+
+            <ImageView
+                android:layout_width="210dp"
+                android:layout_height="140dp"
+                android:layout_below="@id/primer_marco"
+                android:src="@drawable/segundo_marco"
+                />
+
+            <ImageView
+                android:id="@+id/tercer_juego"
+                android:layout_width="175dp"
+                android:layout_height="120dp"
+                android:layout_below="@id/primer_marco"
+                android:layout_toEndOf="@id/segundo_juego"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="22dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/angry"
+                />
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="137dp"
+                android:layout_marginStart="10dp"
+                android:layout_below="@id/primer_marco"
+                android:layout_toEndOf="@id/segundo_juego"
+                android:src="@drawable/tercer_marco"
+                />
+
+            <TextView
+                android:id="@+id/bestsellers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/tercer_juego"
+                android:text="@string/bestsellers"
+                android:fontFamily="monospace"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/blanco"
+                />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bestsellers">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/bestsellers_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/texto_categoria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/constraint"
+                android:text="@string/categorias"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="monospace"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/blanco"
+                />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/texto_categoria">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/categorias_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_tienda_logged"
+            android:icon="@drawable/ic_tienda"
+            android:title="@string/titulo_tienda" />
+        <item
+            android:id="@+id/nav_biblioteca_logged"
+            android:icon="@drawable/ic_biblioteca"
+            android:title="@string/biblioteca" />
+        <item
+            android:id="@+id/nav_modificar_logged"
+            android:icon="@drawable/ic_modificar"
+            android:title="@string/modificar_perfil" />
+        <item
+            android:id="@+id/nav_monedero_logged"
+            android:icon="@drawable/ic_monedero"
+            android:title="@string/monedero" />
+        <item
+            android:id="@+id/nav_cerrar_logged"
+            android:icon="@drawable/ic_cerrar"
+            android:title="@string/cerrar_sesion" />
+    </group>
+</menu>

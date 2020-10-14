@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation_logged"
+    app:startDestination="@+id/nav_tienda_logged">
+
+    <fragment
+        android:id="@+id/nav_tienda_logged"
+        android:name="cat.paucasesnoves.mtkgames.ui.tienda.TiendaFragment"
+        android:label="@string/titulo_tienda"
+        tools:layout="@layout/fragment_tienda" />
+    <fragment
+        android:id="@+id/nav_biblioteca_logged"
+        android:name="cat.paucasesnoves.mtkgames.ui.BibliotecaFragment"
+        android:label="@string/biblioteca"
+        tools:layout="@layout/biblioteca_layout" />
+    <fragment
+        android:id="@+id/nav_modificar_logged"
+        android:name="cat.paucasesnoves.mtkgames.ui.ModificarFragment"
+        android:label="@string/modificar_perfil"
+        tools:layout="@layout/modificar_perfil_layout" />
+    <fragment
+        android:id="@+id/nav_monedero_logged"
+        android:name="cat.paucasesnoves.mtkgames.ui.MonederoFragment"
+        android:label="@string/monedero"
+        tools:layout="@layout/fragment_monedero" />
+    <fragment
+        android:id="@+id/nav_cerrar_logged"
+        android:name="cat.paucasesnoves.mtkgames.ui.iniciar.CerrarSesionFragment"
+        android:label="@string/cerrar_sesion"
+        tools:layout="@layout/fragment_iniciar" />
+</navigation>

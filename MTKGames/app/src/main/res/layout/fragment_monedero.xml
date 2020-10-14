@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gradient_blanco">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_uno"
+        android:layout_width="370dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        app:cardBackgroundColor="@color/rosa"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="20dp">
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            
+            <ImageView
+                android:id="@+id/monedero_img_cincuenta"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/monedero_cincuenta"
+                />
+
+            <TextView
+                android:id="@+id/monedero_precio_cincuenta"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/monedero_img_cincuenta"
+                android:layout_marginStart="90dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/dinero_cinco"
+                android:textColor="@color/blanco"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                />
+
+            <ImageView
+                android:id="@+id/monedero_comprar_cincuenta"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/monedero_precio_cincuenta"
+                android:layout_marginStart="3dp"
+                android:src="@drawable/ic_shopping"
+                />
+            
+        </RelativeLayout>
+        
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_dos"
+        android:layout_width="370dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/card_view_uno"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="@color/rosa"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/monedero_img_cien"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/monedero_cien"
+                />
+
+            <TextView
+                android:id="@+id/monedero_precio_cien"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/monedero_img_cien"
+                android:layout_marginStart="90dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/dinero_diez"
+                android:textColor="@color/blanco"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                />
+
+            <ImageView
+                android:id="@+id/monedero_comprar_cien"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/monedero_precio_cien"
+                android:layout_marginStart="3dp"
+                android:src="@drawable/ic_shopping"
+                />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_tres"
+        android:layout_width="370dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/card_view_dos"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="@color/rosa"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/monedero_img_dos"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/monedero_dos"
+                />
+
+            <TextView
+                android:id="@+id/monedero_precio_dos"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/monedero_img_dos"
+                android:layout_marginStart="90dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/dinero_veintitres"
+                android:textColor="@color/blanco"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                />
+
+            <ImageView
+                android:id="@+id/monedero_comprar_dos"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/monedero_precio_dos"
+                android:layout_marginStart="3dp"
+                android:src="@drawable/ic_shopping"
+                />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_cuatro"
+        android:layout_width="370dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/card_view_tres"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="@color/rosa"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/monedero_img_cuatro"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/monedero_cuatro"
+                />
+
+            <TextView
+                android:id="@+id/monedero_precio_cuatro"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/monedero_img_cuatro"
+                android:layout_marginStart="90dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/dinero_cuarenta"
+                android:textColor="@color/blanco"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                />
+
+            <ImageView
+                android:id="@+id/monedero_comprar_cuatro"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/monedero_precio_cuatro"
+                android:layout_marginStart="3dp"
+                android:src="@drawable/ic_shopping"
+                />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_cinco"
+        android:layout_width="370dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/card_view_cuatro"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="@color/rosa"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/monedero_img_cinco"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/monedero_seis"
+                />
+
+            <TextView
+                android:id="@+id/monedero_precio_cinco"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/monedero_img_cinco"
+                android:layout_marginStart="90dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/dinero_sesenta"
+                android:textColor="@color/blanco"
+                android:textSize="30sp"
+                android:textAlignment="center"
+                />
+
+            <ImageView
+                android:id="@+id/monedero_comprar_seis"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/monedero_precio_cinco"
+                android:layout_marginStart="3dp"
+                android:src="@drawable/ic_shopping"
+                />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/monedero_texto_saldo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card_view_cinco"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/saldo_disponible"
+        android:textSize="25sp"
+        android:fontFamily="monospace"
+        android:textColor="@color/blanco"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/monedero_texto_saldo"
+        android:layout_marginStart="20dp"
+        app:cardBackgroundColor="@color/rosa"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="20dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/monedero_num_saldo"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:textSize="40sp"
+                android:textColor="@color/blanco"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/monedero_num_saldo"
+                android:src="@drawable/diamante"
+                />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

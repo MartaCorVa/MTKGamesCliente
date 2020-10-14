@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_gradient"
+    tools:context=".ui.tienda.JuegoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_juego"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_margin="15dp"
+            app:cardBackgroundColor="@color/blanco"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="20dp">
+
+            <ImageView
+                android:id="@+id/juego_imagen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/angry" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/juego_nombre"
+            android:layout_width="170dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@id/card_view_juego"
+            android:gravity="center"
+            android:autoSizeMaxTextSize="25sp"
+            android:autoSizeMinTextSize="15dp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="monospace"
+            android:text="@string/defecto"
+            android:textAlignment="center"
+            android:textColor="@color/blanco"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_comprar"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/juego_nombre"
+            android:layout_toEndOf="@id/card_view_juego"
+            app:cardBackgroundColor="@color/rosa"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/juego_comprar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="25sp"
+                    android:autoSizeTextType="uniform"
+                    android:fontFamily="monospace"
+                    android:text="@string/defecto"
+                    android:textAlignment="center"
+                    android:textColor="@color/blanco"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_toEndOf="@id/juego_comprar"
+                    android:src="@drawable/diamante"
+                    />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_desarrollador"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/card_view_juego"
+            android:layout_centerHorizontal="true"
+            app:cardBackgroundColor="@color/morado"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="20dp">
+
+            <TextView
+                android:id="@+id/juego_desarrollador"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_toEndOf="@id/card_view_juego"
+                android:autoSizeMaxTextSize="25sp"
+                android:autoSizeMinTextSize="15dp"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="monospace"
+                android:text="@string/defecto"
+                android:textAlignment="center"
+                android:textColor="@color/blanco"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_descripcion"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card_view_desarrollador"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/morado">
+
+                <TextView
+                    android:id="@+id/juego_texto_descripcion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="monospace"
+                    android:gravity="center"
+                    android:text="@string/juego_descripcion"
+                    android:textColor="@color/blanco"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <com.ms.square.android.expandabletextview.ExpandableTextView
+                    android:id="@+id/expand_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/juego_texto_descripcion"
+                    android:layout_margin="15dp"
+                    app:animDuration="200"
+                    app:maxCollapsedLines="4">
+
+                    <TextView
+                        android:id="@id/expandable_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/defecto"
+                        android:textColor="@color/blanco"
+                        android:textSize="17sp" />
+
+                    <ImageButton
+                        android:id="@id/expand_collapse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|bottom"
+                        android:background="@android:color/transparent"
+                        android:padding="16dp" />
+
+                </com.ms.square.android.expandabletextview.ExpandableTextView>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <RatingBar
+            android:id="@+id/juego_nota_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card_view_descripcion"
+            android:layout_margin="15dp"
+            android:isIndicator="true"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_nota"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/card_view_descripcion"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_toEndOf="@id/juego_nota_rating"
+            app:cardBackgroundColor="@color/rosa"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="20dp">
+
+            <TextView
+                android:id="@+id/juego_nota"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_toEndOf="@id/card_view_juego"
+                android:autoSizeMaxTextSize="25sp"
+                android:autoSizeMinTextSize="15dp"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="monospace"
+                android:text="@string/defecto"
+                android:textAlignment="center"
+                android:textColor="@color/blanco"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</ScrollView>
